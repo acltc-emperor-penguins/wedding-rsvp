@@ -1,0 +1,12 @@
+First Name: <%= @rsvp.first_name %>
+<br>
+Last Name: <%= @rsvp.last_name %>
+<br>
+Attending?: <%= @rsvp.attending %>
+<br>
+Vegetarian?:<%= @rsvp.vegetarian %>
+<br>
+Number of Guest: <%= @rsvp.guests %>
+<br>
+<%= link_to "Edit", "/rsvps/#{@rsvp.id}/edit" %>
+<%= link_to "Delete", "/rsvps/#{@rsvp.id}/", method: :delete %>
